@@ -35,7 +35,7 @@ brew services start memcached
 
 ### Capybara-Webkit
 ```bash
-brew install brew install qt@5.5
+brew install qt@5.5
 echo 'export PATH="$(brew --prefix qt@5.5)/bin:$PATH"' >> ~/.bashrc
 brew link --force qt@5.5
 ```
