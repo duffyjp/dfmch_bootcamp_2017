@@ -1,49 +1,24 @@
+# README
 
-# DFMCH Rails Bootcamp 2017
+This README would normally document whatever steps are necessary to get the
+application up and running.
 
-## Mac Setup
+Things you may want to cover:
 
-### Xcode Command-Line Tools
-* It will ask if you want to install all of Xcode, you don't need that.
-```bash
-xcode-select --install
-```
+* Ruby version
 
-### HomeBrew
-```bash
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-```
+* System dependencies
 
-### Basic Utils
-```bash
-brew install ack gpg imagemagick sqlite
-```
+* Configuration
 
-### MySQL Server 
-* It will ask for a root password, anything is fine-- We need it later though
+* Database creation
 
-```bash
-brew install mysql
-brew services start mysql
-```
-      
-### Cache Server
-```bash
-brew install memcached
-brew services start memcached
-```
+* Database initialization
 
-### Capybara-Webkit
-```bash
-brew install brew install qt@5.5
-echo 'export PATH="$(brew --prefix qt@5.5)/bin:$PATH"' >> ~/.bashrc
-brew link --force qt@5.5
-```
+* How to run the test suite
 
-### RVM - Ruby Version Manager
-* Close all terminals when done with this step
-```
-gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
-\curl -sSL https://get.rvm.io | bash
-```
+* Services (job queues, cache servers, search engines, etc.)
 
+* Deployment instructions
+
+* ...
