@@ -1,0 +1,15 @@
+
+<p>
+  <strong>Name:</strong>
+  <%= @topic.name %>
+</p>
+
+
+<h3>Books</h3>
+
+<%= content_tag :table, render(@topic.books) %>
+
+
+
+<%= link_to 'Edit', edit_topic_path(@topic) %> |
+<%= link_to 'Back', topics_path %>

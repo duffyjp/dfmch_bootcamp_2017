@@ -2,6 +2,22 @@
 
 <h1>Books</h1>
 
+<%= form_tag nil, method: :get do %>
+
+    <div class="field">
+      <%= label_tag 'Topics' %>
+      <%= text_field_tag "topics" %>
+    </div>
+
+  <div class="field">
+    <%= submit_tag "Search", class: "button" %>
+  </div>
+
+<% end %>
+
+
+
+
 <table class="tablesorter">
   <thead>
     <tr>
@@ -12,15 +28,7 @@
   </thead>
 
   <tbody>
-    <% @books.each do |book| %>
-      <tr>
-        <td><%= link_to book, book %></td>
-        <td><%= book.isbn %></td>
-        <td><%= link_to 'Show', book %></td>
-        <td><%= link_to 'Edit', edit_book_path(book) %></td>
-        <td><%= link_to 'Destroy', book, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
+    <%= render @books %>
   </tbody>
 </table>
 

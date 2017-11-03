@@ -14,3 +14,7 @@ end
 20.times do |index|
   Book.create!(title: Faker::Book.title, isbn: Faker::Code.isbn)
 end
+
+10.times do |topic|
+  Topic.create(name: Faker::Book.genre)
+end
