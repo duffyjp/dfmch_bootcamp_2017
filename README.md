@@ -54,3 +54,4 @@ bundle
 rails g scaffold Person name phone age:integer
 rake db:migrate
 
+rails g scaffold Loan person:references book:references due_date:date return_date:date

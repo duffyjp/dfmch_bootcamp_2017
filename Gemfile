@@ -21,6 +21,7 @@ gem 'uglifier', '>= 1.3.0'
 
 gem 'dfm_web'
 
+gem 'awesome_print'
 
 
 # Use CoffeeScript for .coffee assets and views
