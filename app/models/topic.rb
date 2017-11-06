@@ -12,17 +12,7 @@ class Topic < ApplicationRecord
   end
 
   def self.search(string)
-
-    results = Topic.none
-    string.split.each do |string|
-      results += where("name LIKE ?", "%#{string}%")
-    end
-
-    Topic.where(id: results.uniq.map(&:id))
-
-      #all.where("name LIKE ?", "%#{string}%")
+    Topic.where(id: string.split.map{ |s| where("name LIKE ?", "%#{s}%").ids }.flatten)
   end
-
-
 
 end
