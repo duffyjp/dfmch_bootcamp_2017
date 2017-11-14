@@ -4,10 +4,11 @@
 
 ## Mac Setup
 
-### Xcode Command-Line Tools
-* It will ask if you want to install all of Xcode, you don't need that.
+### Xcode ~~Command-Line Tools~~
+* It will ask if you want to install all of Xcode, ~~you don't need that.~~ It turns out you need that for capybara-webkit, so choose "XCode". You can also install from the App Store.
 ```bash
 xcode-select --install
+sudo xcodebuild -license
 ```
 
 ### HomeBrew
