@@ -26,6 +26,7 @@ brew install ack gpg imagemagick sqlite
 ```bash
 brew install mysql
 brew services start mysql
+mysql_secure_installation
 ```
       
 ### Cache Server
